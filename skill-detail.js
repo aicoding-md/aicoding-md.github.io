@@ -15,6 +15,75 @@ function renderList(items, className = "bullet-list") {
     .join("")}</ul>`;
 }
 
+function toMarkdownList(items) {
+  return items.map((item) => `- ${item}`).join("\n");
+}
+
+function buildSkillMarkdown(skill) {
+  return `---
+name: ${skill.slug}
+title: ${skill.title}
+category: ${skill.category}
+level: ${skill.level}
+priority: ${skill.time}
+description: ${skill.summary}
+---
+
+# ${skill.title}
+
+## Summary
+
+${skill.summary}
+
+## Overview
+
+${skill.overview}
+
+## Trigger
+
+${toMarkdownList(skill.trigger)}
+
+## Inputs
+
+${toMarkdownList(skill.inputs)}
+
+## Constraints
+
+${toMarkdownList(skill.constraints)}
+
+## Workflow
+
+${toMarkdownList(skill.workflow)}
+
+## Outputs
+
+${toMarkdownList(skill.outputs)}
+
+## Preferred Tools
+
+${toMarkdownList(skill.tools)}
+
+## Example Snippet
+
+\`\`\`txt
+${skill.snippet}
+\`\`\`
+`;
+}
+
+function downloadSkillMarkdown(skill) {
+  const markdown = buildSkillMarkdown(skill);
+  const blob = new Blob([markdown], { type: "text/markdown;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `${skill.slug}.md`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
 function renderSkillDetail(skill) {
   document.title = `${skill.title} | Frontend Skill`;
 
@@ -30,6 +99,9 @@ function renderSkillDetail(skill) {
           <span class="meta-pill">Level: ${escapeHtml(skill.level)}</span>
           <span class="meta-pill">建议投入: ${escapeHtml(skill.time)}</span>
         </div>
+        <button class="download-button" type="button" id="download-skill-md">
+          下载 Markdown
+        </button>
       </header>
 
       <section class="content-layout">
@@ -74,6 +146,13 @@ function renderSkillDetail(skill) {
       </section>
     </article>
   `;
+
+  const downloadButton = document.getElementById("download-skill-md");
+  if (downloadButton) {
+    downloadButton.addEventListener("click", () => {
+      downloadSkillMarkdown(skill);
+    });
+  }
 }
 
 function renderEmptyState() {
