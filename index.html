@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>AI Coding Skills</title>
-</head>
-<body>
-    <h1>There are plenty of useful skills for AI Coding here—stay tuned.</h1>
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Coding Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Skill Library</p>
+        <h1>8 个高级大前端最值得打造的 Coding Skills</h1>
+        <p class="hero-copy">
+          从极致性能、AI 原生研发到动态化架构、现代跨端与工程质量，这里整理了一套更偏高级能力模型的前端技能地图。
+        </p>
+      </header>
+
+      <main>
+        <section class="skills-panel">
+          <div class="section-heading">
+            <h2>技能列表</h2>
+            <p>点击任意技能卡片，进入对应的完整内容页。</p>
+          </div>
+          <div id="skill-list" class="skill-grid" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./skills-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
