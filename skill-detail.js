@@ -35,18 +35,23 @@ function renderSkillDetail(skill) {
       <section class="content-layout">
         <div class="content-column">
           <section class="content-section">
-            <h2>你将掌握什么</h2>
-            ${renderList(skill.outcomes)}
+            <h2>输出结果</h2>
+            ${renderList(skill.outputs)}
           </section>
 
           <section class="content-section">
-            <h2>核心知识点</h2>
-            ${renderList(skill.keyPoints)}
+            <h2>执行约束</h2>
+            ${renderList(skill.constraints)}
           </section>
 
           <section class="content-section">
-            <h2>建议练手项目</h2>
-            ${renderList(skill.projects)}
+            <h2>执行流程</h2>
+            ${renderList(skill.workflow)}
+          </section>
+
+          <section class="content-section">
+            <h2>优先工具</h2>
+            ${renderList(skill.tools)}
           </section>
 
           <section class="content-section">
@@ -57,13 +62,13 @@ function renderSkillDetail(skill) {
 
         <aside class="side-column">
           <section class="content-section">
-            <h2>适合谁学</h2>
-            ${renderList(skill.suitableFor, "meta-list")}
+            <h2>触发条件</h2>
+            ${renderList(skill.trigger, "meta-list")}
           </section>
 
           <section class="content-section">
-            <h2>学习路径</h2>
-            ${renderList(skill.steps, "learning-path")}
+            <h2>所需输入</h2>
+            ${renderList(skill.inputs, "learning-path")}
           </section>
         </aside>
       </section>
