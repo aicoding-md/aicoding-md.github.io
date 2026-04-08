@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>把大任务拆成 AI 更擅长执行的步骤 | AI Coding Skills Library</title>
+    <meta name="description" content="AI 更擅长处理边界明确、目标单一的任务。把大需求拆成探索、实现、验证三段，出码率和正确率都会更高。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回首页</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">任务拆解</span>
+              <h1>把大任务拆成 AI 更擅长执行的步骤</h1>
+              <p class="overview-copy">很多“AI 写不出来”的问题，本质上是任务过大且目标混杂。先让 AI 读代码、做切面判断，再让它落实现，最后要求它自查验证，这种链式方式比一次性要求“直接做完”稳定得多。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Core</span>
+              <span class="meta-pill">Type: Article</span>
+            </div>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>核心观点</h2>
+                <ul class="bullet-list"><li>把“分析”和“实现”分开，有助于减少错误假设</li><li>让 AI 先列风险点，再写代码，通常能减少回滚</li><li>最后再单独补验证步骤，能提高交付完成度</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>落地清单</h2>
+                <ul class="bullet-list"><li>第一步先让 AI 识别相关文件和关键调用链</li><li>第二步明确只改哪些模块，不要无限扩散</li><li>第三步要求输出验证方式和未覆盖风险</li><li>必要时把测试补全单独作为一步</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>常见误区</h2>
+                <ul class="bullet-list"><li>在同一条请求里混合架构设计、页面实现、测试修复和部署</li><li>让 AI 同时重构多个领域模块，导致上下文失控</li><li>没有定义完成条件，导致实现永远在发散</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>复制模板</h2>
+                <pre class="code-block"><code>Step 1: 先阅读相关模块，告诉我应该改哪些文件。
+Step 2: 只实现接口层改造，不改页面层。
+Step 3: 补验证方式，并说明还剩什么风险。</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>摘要</h2>
+                <p class="overview-copy">AI 更擅长处理边界明确、目标单一的任务。把大需求拆成探索、实现、验证三段，出码率和正确率都会更高。</p>
+              </section>
+
+              <section class="content-section">
+                <h2>适用目标</h2>
+                <ul class="learning-path">
+                  <li>提高 AI 出码率</li>
+                  <li>减少返工与反复沟通</li>
+                  <li>输出更可合并的代码</li>
+                </ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

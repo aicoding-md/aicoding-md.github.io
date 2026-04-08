@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用正确的输出格式提升 AI 可用代码比例 | AI Coding Skills Library</title>
+    <meta name="description" content="不同任务要让 AI 输出不同形态的结果。明确要求它输出 patch、文件草稿、测试方案或迁移清单，会显著提高代码可落地性。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回首页</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">交付方式</span>
+              <h1>用正确的输出格式提升 AI 可用代码比例</h1>
+              <p class="overview-copy">很多时候不是 AI 不会写，而是输出格式不对。架构讨论适合先要清单和风险，局部修复适合要 patch，多文件改造适合按文件分块输出。格式选对了，后续接手成本会低很多。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Advanced</span>
+              <span class="meta-pill">Type: Article</span>
+            </div>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>核心观点</h2>
+                <ul class="bullet-list"><li>局部修复优先要 patch 或精确文件改动</li><li>复杂改造先要变更计划，再逐步要代码</li><li>高风险改动应要求额外输出验证步骤和回滚点</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>落地清单</h2>
+                <ul class="bullet-list"><li>明确要 patch、完整文件还是伪代码</li><li>要求按文件分组输出，避免大段混杂</li><li>补充测试、迁移和风险说明的输出要求</li><li>让 AI 标明哪些部分是推断，哪些部分来自现有代码</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>常见误区</h2>
+                <ul class="bullet-list"><li>默认让 AI 一次性输出所有文件全文</li><li>复杂改造没有要求按阶段交付</li><li>没有要求解释哪些地方需要你人工确认</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>复制模板</h2>
+                <pre class="code-block"><code>请按文件输出变更。
+每个文件先给改动目的，再给代码。
+最后补一段验证步骤和风险说明。</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>摘要</h2>
+                <p class="overview-copy">不同任务要让 AI 输出不同形态的结果。明确要求它输出 patch、文件草稿、测试方案或迁移清单，会显著提高代码可落地性。</p>
+              </section>
+
+              <section class="content-section">
+                <h2>适用目标</h2>
+                <ul class="learning-path">
+                  <li>提高 AI 出码率</li>
+                  <li>减少返工与反复沟通</li>
+                  <li>输出更可合并的代码</li>
+                </ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

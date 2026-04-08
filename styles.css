@@ -156,6 +156,10 @@ body::before {
   border-color: rgba(220, 93, 53, 0.3);
 }
 
+.article-card {
+  background: linear-gradient(180deg, rgba(255, 250, 244, 0.94), rgba(240, 248, 247, 0.86));
+}
+
 .skill-card-header {
   display: flex;
   justify-content: space-between;
