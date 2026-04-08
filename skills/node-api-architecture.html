@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node API 架构与分层重构 | AI Coding Skills Library</title>
+    <meta name="description" content="用于构建或重构 Node.js API 服务，处理路由、服务层、仓储层、验证与错误模型。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Backend / 服务架构</span>
+              <h1>Node API 架构与分层重构</h1>
+              <p class="overview-copy">当任务涉及 Express、NestJS、Fastify 或自建 Node 服务的结构设计时触发。目标是生成可维护、分层清晰、易测试的后端代码，而不是把逻辑堆在 controller 中。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Advanced</span>
+              <span class="meta-pill">Priority: high</span>
+            </div>
+            <a class="download-button" href="/downloads/node-api-architecture.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>服务分层方案</li><li>接口代码或重构补丁</li><li>测试和迁移建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>保持 controller 薄、业务逻辑集中在 service/use-case</li><li>所有外部输入都需要验证和类型约束</li><li>错误模型、日志和响应格式应统一</li><li>改造时尽量兼容现有接口契约</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>分析现有代码层次和职责混乱点</li><li>设计路由、服务、仓储和校验边界</li><li>输出结构化代码和迁移建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>Express/NestJS/Fastify</li><li>Zod/class-validator</li><li>统一错误处理中间件</li><li>依赖注入</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>router.post(&#39;/users&#39;, validate(createUserSchema), createUserHandler);</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户要求搭建或重构 Node API</li><li>任务涉及分层设计、DTO、校验和错误处理</li><li>需要补齐服务结构、目录规范和可测试性</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>现有路由、服务、数据库访问代码</li><li>接口定义、鉴权方式和错误返回规范</li><li>框架类型和部署约束</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

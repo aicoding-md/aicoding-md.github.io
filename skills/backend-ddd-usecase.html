@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>后端领域建模与 Use Case 设计 | AI Coding Skills Library</title>
+    <meta name="description" content="用于复杂业务系统的领域对象、用例层和边界设计，让 AI 生成更贴近业务语义的后端代码。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Backend / 领域设计</span>
+              <h1>后端领域建模与 Use Case 设计</h1>
+              <p class="overview-copy">当任务出现业务规则复杂、状态流多、服务耦合严重或模型命名混乱时触发。目标是让 AI 从领域语言而不是数据库表结构出发重构代码。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Expert</span>
+              <span class="meta-pill">Priority: medium</span>
+            </div>
+            <a class="download-button" href="/downloads/backend-ddd-usecase.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>领域模型草图</li><li>use case 结构建议</li><li>关键服务或实体代码</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>先抽象业务语言和规则，再谈技术实现</li><li>不要把所有概念都包装成 DDD 名词，保持务实</li><li>实体、值对象和用例边界必须有明确职责</li><li>需要兼顾现有工程演进成本</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>提炼领域对象、规则和状态变化</li><li>建立 use case 层与基础设施边界</li><li>输出重构方案与关键代码</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>Use Case Pattern</li><li>状态机</li><li>领域事件</li><li>接口隔离</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>class ApproveInvoiceUseCase {
+  async execute(input: ApproveInvoiceInput) {
+    // domain rules here
+  }
+}</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户提到复杂业务流程、状态机或规则散落</li><li>任务涉及订单、审批、结算、权限等领域逻辑</li><li>需要从 CRUD 代码提升到用例驱动结构</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>核心业务流程、规则、状态转换和角色定义</li><li>现有 service/model/entity 代码</li><li>外部依赖、事件和边界上下文</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

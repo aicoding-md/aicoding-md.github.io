@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React 设计系统与组件抽象 | AI Coding Skills Library</title>
+    <meta name="description" content="用于构建可复用组件、统一 API、样式 token 和文档示例，让 AI 生成可维护的组件系统代码。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Frontend / 组件工程</span>
+              <h1>React 设计系统与组件抽象</h1>
+              <p class="overview-copy">当任务涉及组件库、业务组件抽象、Design Token 收敛或 Storybook 文档补全时触发。目标是输出一致、可演进、具备清晰 API 边界的组件实现。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Advanced</span>
+              <span class="meta-pill">Priority: medium</span>
+            </div>
+            <a class="download-button" href="/downloads/react-design-system-builder.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>组件抽象方案</li><li>可复用组件代码</li><li>示例、文档或测试建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>优先抽象高复用能力，避免把临时业务分支固化到基础组件</li><li>组件 API 必须简洁、可预测，并遵循团队命名模式</li><li>必须考虑 a11y、键盘交互和状态边界</li><li>在现有设计系统上演进，不随意引入新视觉语言</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>分析已有组件的共性与差异，确定抽象层级</li><li>设计 props API、状态模型和样式 token 接口</li><li>输出组件代码、使用示例和测试/文档建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>React</li><li>TypeScript</li><li>Storybook</li><li>Design Tokens</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>type ButtonProps = {
+  variant?: &#39;primary&#39; | &#39;secondary&#39;;
+  size?: &#39;sm&#39; | &#39;md&#39; | &#39;lg&#39;;
+};</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户要求抽象重复 UI 或搭建组件库</li><li>任务涉及按钮、表单、弹窗、表格等基础组件统一</li><li>需要让新组件符合现有设计系统风格</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>现有组件实现、视觉规范和交互规则</li><li>项目中的样式方案和组件命名约定</li><li>组件的受控/非受控、可访问性和组合要求</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

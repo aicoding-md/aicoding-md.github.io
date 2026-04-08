@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据库查询与索引优化 | AI Coding Skills Library</title>
+    <meta name="description" content="用于处理 SQL 慢查询、索引失效、N+1、分页和 ORM 查询膨胀问题，帮助 AI 生成更高效的数据访问代码。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Backend / 数据层</span>
+              <h1>数据库查询与索引优化</h1>
+              <p class="overview-copy">当接口慢、数据库 CPU 飙高、列表查询异常重或报表逻辑效率差时触发。目标是让 AI 从执行计划和访问模式出发优化，而不是只换一种 ORM 写法。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Expert</span>
+              <span class="meta-pill">Priority: high</span>
+            </div>
+            <a class="download-button" href="/downloads/database-query-optimizer.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>查询瓶颈分析</li><li>SQL/索引优化建议</li><li>验证与回滚说明</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>先看执行计划和数据分布，再建议索引</li><li>不能为了查询速度破坏写入成本和数据一致性</li><li>分页、排序和过滤要结合真实使用路径设计</li><li>必须说明索引和查询改造的副作用</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>识别最重查询和访问模式</li><li>优化 SQL、索引、分页或预计算策略</li><li>输出查询代码与验证方法</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>EXPLAIN</li><li>慢查询日志</li><li>索引设计</li><li>ORM query plan</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>CREATE INDEX idx_orders_user_status_created_at ON orders(user_id, status, created_at DESC);</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户提到慢查询、索引优化、分页性能或 N+1</li><li>任务涉及 SQL、ORM、聚合报表或复杂过滤条件</li><li>需要数据库层面的性能诊断</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>SQL/ORM 查询代码</li><li>表结构、索引、执行计划和数据量级</li><li>响应时间目标和读写比例</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React 性能救火 | AI Coding Skills Library</title>
+    <meta name="description" content="用于解决 React 页面卡顿、重复渲染、长列表掉帧和交互迟滞，产出可直接落地的性能优化代码。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Frontend / 性能优化</span>
+              <h1>React 性能救火</h1>
+              <p class="overview-copy">当页面出现明显卡顿、列表滚动掉帧、组件重复渲染或交互响应过慢时触发。目标是帮助 AI 快速定位渲染热点，减少无效更新，并给出兼顾收益和可维护性的改造方案。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Advanced</span>
+              <span class="meta-pill">Priority: high</span>
+            </div>
+            <a class="download-button" href="/downloads/react-performance-rescue.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>性能瓶颈归因</li><li>可提交的代码修改建议或补丁</li><li>验证指标和回归检查清单</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>先定位性能瓶颈，再做局部优化，避免盲目全量重构</li><li>默认优先选择简单稳定的优化方式，而不是过度使用 memo 化</li><li>React Compiler 或团队既有模式优先，不引入风格冲突</li><li>必须说明改动收益、风险和验证方式</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>定位最重的渲染路径、状态更新源和副作用链路</li><li>优先优化数据结构、渲染边界、列表策略和状态拆分</li><li>实现最小必要代码变更，并给出验证步骤</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>React DevTools Profiler</li><li>Chrome DevTools Performance</li><li>虚拟列表</li><li>startTransition / useDeferredValue</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>startTransition(() =&gt; {
+  setFilteredRows(nextRows);
+});</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户提到 React 页面卡顿、掉帧、输入延迟或首屏慢</li><li>任务涉及长列表、复杂图表、动画或频繁状态更新</li><li>需要对现有 React 代码做性能重构而不是简单解释</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>相关页面、组件和状态管理代码</li><li>复现步骤、性能录屏、Profiler 或 Performance 数据</li><li>业务约束，例如不能改变交互逻辑或接口协议</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

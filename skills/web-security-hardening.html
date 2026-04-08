@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 安全加固 | AI Coding Skills Library</title>
+    <meta name="description" content="用于处理 XSS、CSRF、权限泄露、Token 暴露和前端安全基线问题，帮助 AI 生成更安全的实现。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Frontend / 安全</span>
+              <h1>Web 安全加固</h1>
+              <p class="overview-copy">当任务涉及登录态、富文本、文件上传、权限控制或安全整改时触发。目标是让 AI 识别高风险点，生成符合现代 Web 安全实践的代码和防护建议。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Advanced</span>
+              <span class="meta-pill">Priority: high</span>
+            </div>
+            <a class="download-button" href="/downloads/web-security-hardening.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>安全风险列表</li><li>前端修复建议</li><li>需要后端/运维协同的事项</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>先识别威胁模型，再给方案，不泛化堆概念</li><li>前端措施要和后端鉴权策略对齐</li><li>不能引入会破坏登录态或业务流的激进变更</li><li>必须标明哪些风险需要后端配合</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>识别攻击面和数据入口</li><li>判断前端、后端和平台层各自责任</li><li>输出代码修复、配置调整和联动建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>CSP</li><li>DOMPurify</li><li>SameSite Cookie</li><li>权限中间层</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>const safeHtml = DOMPurify.sanitize(rawHtml, { USE_PROFILES: { html: true } });</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户提到 XSS、CSRF、鉴权、Cookie、Token 或权限问题</li><li>任务涉及富文本、上传、跨域或第三方脚本</li><li>需要对现有前端代码做安全整改</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>鉴权流程、请求头、Cookie 策略和相关代码</li><li>富文本、上传或外链脚本的处理逻辑</li><li>接口安全约束和部署环境</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

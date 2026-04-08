@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全链路生产问题排查 | AI Coding Skills Library</title>
+    <meta name="description" content="用于处理前端、网关、后端、数据库和缓存串联的线上故障，帮助 AI 输出高效的排障与修复方案。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Fullstack / 排障</span>
+              <h1>全链路生产问题排查</h1>
+              <p class="overview-copy">当问题横跨浏览器、接口、网关、服务、数据库或缓存时触发。目标是让 AI 按证据链和影响面组织排障，而不是头痛医头脚痛医脚。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Expert</span>
+              <span class="meta-pill">Priority: high</span>
+            </div>
+            <a class="download-button" href="/downloads/fullstack-production-troubleshooter.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>排障结论与证据链</li><li>临时止血和正式修复建议</li><li>后续监控与治理动作</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>先止血与缩小影响，再深挖根因</li><li>所有判断都要尽量建立在日志、Trace 和指标上</li><li>必须区分临时缓解、永久修复和后续治理</li><li>不要在证据不足时直接下结论</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>建立时间线和影响面，定位最可能的故障层级</li><li>设计止血措施与根因排查路径</li><li>输出修复方案、验证步骤和复盘项</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>日志</li><li>APM/Trace</li><li>错误监控</li><li>变更记录比对</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>1. Confirm blast radius
+2. Compare latest deploys
+3. Trace request path end-to-end</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户提到线上故障、接口超时、全链路异常或偶发错误</li><li>问题同时影响前端展示和后端响应</li><li>需要优先止血再定位根因</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>错误日志、监控图表、Trace、告警时间线</li><li>受影响接口、页面和用户范围</li><li>最近变更记录和基础设施状态</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

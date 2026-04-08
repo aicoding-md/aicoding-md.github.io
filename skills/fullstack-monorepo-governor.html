@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>全栈 Monorepo 治理 | AI Coding Skills Library</title>
+    <meta name="description" content="用于治理前后端 Monorepo 的包边界、共享代码、构建缓存、发布策略和依赖一致性。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="/index.html">← 返回技能列表</a>
+      <main>
+        <article class="skill-detail-card">
+          <header class="detail-header">
+            <div>
+              <span class="section-chip">Fullstack / 工程架构</span>
+              <h1>全栈 Monorepo 治理</h1>
+              <p class="overview-copy">当任务横跨前端、后端、共享包和基础设施时触发。目标是让 AI 在保持协作效率的同时，避免 Monorepo 变成耦合泥团。</p>
+            </div>
+            <div class="detail-meta">
+              <span class="meta-pill">Level: Expert</span>
+              <span class="meta-pill">Priority: medium</span>
+            </div>
+            <a class="download-button" href="/downloads/fullstack-monorepo-governor.md" download>下载 SKILL.md</a>
+          </header>
+
+          <section class="content-layout">
+            <div class="content-column">
+              <section class="content-section">
+                <h2>输出结果</h2>
+                <ul class="bullet-list"><li>Monorepo 结构设计</li><li>工具配置和脚本</li><li>边界治理建议</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行约束</h2>
+                <ul class="bullet-list"><li>共享代码只抽高稳定共性，避免任意跨包引用</li><li>边界要清晰，可见依赖关系要可治理</li><li>构建和测试必须支持增量执行</li><li>输出需兼顾本地开发体验和 CI 速度</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>执行流程</h2>
+                <ul class="bullet-list"><li>分析包结构和依赖耦合</li><li>设计 workspace、共享包和任务管线</li><li>输出目录方案、配置文件和治理规则</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>优先工具</h2>
+                <ul class="bullet-list"><li>pnpm workspace</li><li>Turborepo/Nx</li><li>Changesets</li><li>共享类型包</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>示例片段</h2>
+                <pre class="code-block"><code>&quot;workspaces&quot;: [&quot;apps/*&quot;, &quot;packages/*&quot;]</code></pre>
+              </section>
+            </div>
+
+            <aside class="side-column">
+              <section class="content-section">
+                <h2>触发条件</h2>
+                <ul class="meta-list"><li>用户要求搭建或重构 Monorepo</li><li>任务涉及前端应用、后端服务和 shared package 共存</li><li>需要统一 lint、测试、构建和发布策略</li></ul>
+              </section>
+
+              <section class="content-section">
+                <h2>所需输入</h2>
+                <ul class="learning-path"><li>现有仓库结构、包关系和构建工具</li><li>应用数量、共享代码范围和团队协作模式</li><li>发布方式和缓存需求</li></ul>
+              </section>
+            </aside>
+          </section>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
