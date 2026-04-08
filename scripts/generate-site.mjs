@@ -46,6 +46,10 @@ function renderList(items, className = "bullet-list") {
     .join("")}</ul>`;
 }
 
+function renderParagraphs(items) {
+  return items.map((item) => `<p>${escapeHtml(item)}</p>`).join("");
+}
+
 function markdownList(items) {
   return items.map((item) => `- ${item}`).join("\n");
 }
@@ -122,6 +126,11 @@ function buildArticlePage(article) {
 
           <section class="content-layout">
             <div class="content-column">
+              <section class="content-section article-body">
+                <h2>正文</h2>
+                ${renderParagraphs(article.body ?? [article.overview])}
+              </section>
+
               <section class="content-section">
                 <h2>核心观点</h2>
                 ${renderList(article.highlights)}

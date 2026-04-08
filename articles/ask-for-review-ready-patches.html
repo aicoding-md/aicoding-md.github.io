@@ -32,6 +32,11 @@
 
           <section class="content-layout">
             <div class="content-column">
+              <section class="content-section article-body">
+                <h2>正文</h2>
+                <p>很多人用 AI 的习惯是先让它讲思路，再慢慢收敛到代码。但在真实开发里，最有价值的往往是可以直接进入 review 的 patch。格式越接近交付物，后续的沟通成本通常越低。</p><p>为了让 AI 输出更像能合并的补丁，你可以把文件边界、测试要求和风险提示一起写进 prompt。这样它不会只给你“看起来对”的答案，而会更主动地补齐边界判断和验证步骤。</p><p>如果任务涉及多文件改动，建议先要求最小可行 patch，再逐步扩展。这样既能控制风险，也更容易确认第一轮输出是否方向正确。</p>
+              </section>
+
               <section class="content-section">
                 <h2>核心观点</h2>
                 <ul class="bullet-list"><li>patch 输出比整段解释更容易直接接进工程</li><li>把测试与风险写进要求里，AI 更容易自带自检</li><li>明确哪些地方可以不改，能避免它过度重构</li></ul>

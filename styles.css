@@ -288,6 +288,15 @@ body::before {
   line-height: 1.65;
 }
 
+.article-body p {
+  margin: 0 0 14px;
+  line-height: 1.85;
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
 .empty-state h1 {
   margin-top: 0;
   font-family: "Space Grotesk", sans-serif;
