@@ -35,6 +35,35 @@ function renderParagraphs(items) {
   return items.map((item) => `<p>${escapeHtml(item)}</p>`).join("");
 }
 
+function renderOrchardTable(orchards) {
+  const rows = orchards
+    .map(
+      (orchard) => `<tr>
+              <td>${escapeHtml(orchard.name)}</td>
+              <td>${escapeHtml(orchard.address)}</td>
+              <td>${escapeHtml(orchard.phone)}</td>
+              <td>${escapeHtml(orchard.highlight)}</td>
+            </tr>`
+    )
+    .join("");
+
+  return `<div class="table-wrap">
+          <table class="orchard-table">
+            <thead>
+              <tr>
+                <th>采摘园名字</th>
+                <th>地址</th>
+                <th>电话</th>
+                <th>亮点介绍</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>`;
+}
+
 function layout({ title, description, pathname = "/", body }) {
   return `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -109,7 +138,7 @@ function buildIndexPage() {
       <section class="section-head">
         <p class="eyebrow">精选城市</p>
         <h2>每个省份选一个适合周末出发的采摘城市</h2>
-        <p>这里优先选择交通相对便利、采摘品类有代表性、适合亲子和短途游的城市。详情页提供采摘品类、亮点、地址线索和联系建议。</p>
+        <p>首页卡片聚合这座城市的采摘特色和主打水果；进入城市详情页后，可以查看多个采摘园方向的表格清单、地址线索、联系建议和出行提醒。</p>
       </section>
       <section class="city-grid">
         ${cards}
@@ -153,6 +182,11 @@ function buildCityPage(item) {
           ${renderParagraphs(item.description)}
         </section>
         <section>
+          <h2>${escapeHtml(item.city)}采摘园清单</h2>
+          <p>下面按城市采摘线索整理多个园区方向，方便你比较采摘品类、位置范围和适合的玩法。电话和营业状态建议出发前以地图平台、园区公众号或官方公告为准。</p>
+          ${renderOrchardTable(item.orchards)}
+        </section>
+        <section>
           <h2>适合采摘什么</h2>
           ${renderList(item.pick)}
         </section>
@@ -168,11 +202,11 @@ function buildCityPage(item) {
 
       <aside class="info-panel">
         <div>
-          <h2>地址线索</h2>
+          <h2>城市采摘范围</h2>
           <p>${escapeHtml(item.address)}</p>
         </div>
         <div>
-          <h2>联系方式</h2>
+          <h2>联系提醒</h2>
           <p>${escapeHtml(item.contact)}</p>
         </div>
         <div>

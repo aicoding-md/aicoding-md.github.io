@@ -319,6 +319,50 @@ h1 {
   margin-top: 8px;
 }
 
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.orchard-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.orchard-table th,
+.orchard-table td {
+  padding: 15px 16px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.orchard-table th {
+  color: var(--soil);
+  background: rgba(47, 125, 50, 0.09);
+  font-size: 0.9rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.orchard-table td {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.orchard-table td:first-child {
+  color: var(--leaf-dark);
+  font-weight: 900;
+}
+
+.orchard-table tr:last-child td {
+  border-bottom: 0;
+}
+
 .info-panel {
   position: sticky;
   top: 18px;

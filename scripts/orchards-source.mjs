@@ -1,21 +1,51 @@
 export const siteMeta = {
   title: "采摘园网 | 中国周末采摘园城市指南",
   description:
-    "采摘园网精选中国各省份适合周末出发的采摘城市，提供草莓、樱桃、葡萄、蓝莓、柑橘、苹果等采摘指南，包含特色介绍、地址线索、联系方式建议和亲子出行提醒。",
+    "采摘园网精选中国各省份适合周末出发的采摘城市，首页聚合城市采摘特色，详情页整理采摘园清单、地址线索、联系建议、时令水果和亲子出行提醒。",
   heroImage:
-    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1726587141088-77db7fb1fe93?auto=format&fit=crop&w=1200&q=80"
 };
 
 const imageMap = {
   strawberry: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=900&q=80",
   cherry: "https://images.unsplash.com/photo-1528821128474-27f963b062bf?auto=format&fit=crop&w=900&q=80",
-  grape: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=900&q=80",
+  grape: "https://images.unsplash.com/photo-1714631359369-165b0676e976?auto=format&fit=crop&w=900&q=80",
   apple: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=900&q=80",
   orange: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=900&q=80",
   blueberry: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=900&q=80",
   peach: "https://images.unsplash.com/photo-1532704868953-d85f24176d73?auto=format&fit=crop&w=900&q=80",
   farm: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
 };
+
+function makeOrchards({ province, city, crops, theme }) {
+  const [primary, secondary, third] = crops;
+  return [
+    {
+      name: `${city}${primary}采摘园`,
+      address: `${province}${city}近郊${primary}种植集中区，建议地图搜索“${city} ${primary}采摘园”`,
+      phone: "以地图平台展示电话为准",
+      highlight: `主打${primary}采摘，适合想直奔主题、体验成熟季鲜果的游客。`
+    },
+    {
+      name: `${city}亲子生态采摘园`,
+      address: `${province}${city}周边生态农业园或亲子农庄片区`,
+      phone: "出发前通过园区公众号或地图电话确认",
+      highlight: `更适合亲子家庭，通常会组合${primary}、${secondary}等多种时令水果体验。`
+    },
+    {
+      name: `${city}${theme}农庄`,
+      address: `${province}${city}乡村休闲农业带，适合自驾顺路安排`,
+      phone: "建议提前电话咨询采摘期和入园规则",
+      highlight: `适合把采摘、农家餐、拍照和周边游串成半日到一日行程。`
+    },
+    {
+      name: `${city}四季果蔬采摘园`,
+      address: `${province}${city}温室大棚或现代农业示范园周边`,
+      phone: "以当天营业公告为准",
+      highlight: `适合非旺季出行，常见${third || secondary}、小番茄、叶菜等补充体验。`
+    }
+  ];
+}
 
 function makeDestination({
   slug,
@@ -38,9 +68,9 @@ function makeDestination({
     imageAlt: `${city}${theme}采摘园风景`,
     summary: `${city}周边适合亲子和周末短途游的${theme}采摘目的地，主打${crops.join("、")}，适合边玩边摘、拍照休闲。`,
     description: [
-      `${city}的采摘体验很适合做成半日到一日游：早上进园采摘，中午在周边农家餐厅吃饭，下午顺路逛乡村、湿地或古镇。相比单纯买水果，采摘园更适合亲子互动，也适合朋友周末放松。`,
-      `这里推荐把${crops.slice(0, 2).join("和")}作为核心体验。采摘前可以先问清楚是否按斤称重、是否需要门票、是否能边摘边尝，以及园区是否提供停车、洗手间和遮阳休息区。`,
-      `如果你从外地出发，建议把采摘园作为城市周边游的一站，而不是唯一行程。这样即使遇到天气、成熟度或临时闭园，也能灵活调整路线。`
+      `${city}的采摘资源通常分布在近郊农业园、生态农庄和乡村采摘带。首页卡片展示的是这座城市整体采摘特色，详情页则把不同类型的采摘园线索集中列出来，方便按品类和出行方式筛选。`,
+      `这里推荐把${crops.slice(0, 2).join("和")}作为核心体验，也可以结合${crops[2] || "时令果蔬"}安排顺路采摘。采摘前可以先问清楚是否按斤称重、是否需要门票、是否能边摘边尝，以及园区是否提供停车、洗手间和遮阳休息区。`,
+      `采摘园的营业状态、电话和成熟度变化很快，建议把下方表格当作城市采摘线索，出发前再通过地图平台、园区公众号或电话做二次确认。`
     ],
     pick: crops.map((crop) => `${crop}：适合现场体验，成熟期内口感和拍照效果更好。`),
     highlights: [
@@ -55,6 +85,7 @@ function makeDestination({
       "亲子出行建议准备防晒、防蚊、湿巾和可替换衣物。",
       "如果计划购买较多水果，建议自带泡沫箱或硬质果篮，减少路上挤压。"
     ],
+    orchards: makeOrchards({ province, city, crops, theme }),
     searchKeywords: [`${city}采摘园`, `${city}${crops[0]}采摘`, `${province}亲子采摘`, `${city}周末采摘`]
   };
 }
@@ -92,4 +123,3 @@ export const destinations = [
   makeDestination({ slug: "ningxia-yinchuan", province: "宁夏", city: "银川", crops: ["葡萄", "枸杞", "苹果"], season: "6月至10月", theme: "贺兰山下", image: "grape" }),
   makeDestination({ slug: "xinjiang-turpan", province: "新疆", city: "吐鲁番", crops: ["葡萄", "哈密瓜", "桑葚"], season: "6月至9月", theme: "西域瓜果", image: "grape" })
 ];
-
