@@ -319,48 +319,91 @@ h1 {
   margin-top: 8px;
 }
 
-.table-wrap {
-  overflow-x: auto;
-  margin-top: 18px;
+.orchard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.orchard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 100%;
+  padding: 20px;
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.5);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(233, 245, 223, 0.5)),
+    var(--card);
+  box-shadow: 0 14px 34px rgba(63, 47, 36, 0.08);
 }
 
-.orchard-table {
-  width: 100%;
-  min-width: 760px;
-  border-collapse: collapse;
-}
-
-.orchard-table th,
-.orchard-table td {
-  padding: 15px 16px;
-  border-bottom: 1px solid var(--line);
-  text-align: left;
-  vertical-align: top;
-}
-
-.orchard-table th {
-  color: var(--soil);
-  background: rgba(47, 125, 50, 0.09);
-  font-size: 0.9rem;
+.orchard-card-head span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--leaf-dark);
+  background: rgba(47, 125, 50, 0.1);
+  font-size: 0.76rem;
   font-weight: 900;
-  white-space: nowrap;
 }
 
-.orchard-table td {
+.orchard-card h3 {
+  margin-bottom: 0;
+  color: var(--soil);
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+
+.orchard-meta {
+  display: grid;
+  gap: 14px;
+}
+
+.orchard-meta strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--leaf-dark);
+  font-size: 0.82rem;
+}
+
+.orchard-meta p,
+.source-note {
+  margin: 0;
   color: var(--muted);
   line-height: 1.7;
 }
 
-.orchard-table td:first-child {
-  color: var(--leaf-dark);
+.phone-pill {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 9px 12px;
+  color: #fffaf0;
+  background: linear-gradient(135deg, var(--rose), #d95532);
   font-weight: 900;
+  text-decoration: none;
 }
 
-.orchard-table tr:last-child td {
-  border-bottom: 0;
+.phone-pill.muted {
+  color: var(--muted);
+  background: rgba(97, 112, 95, 0.1);
+}
+
+.source-note {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px dashed var(--line);
+  font-size: 0.82rem;
+}
+
+.source-note a {
+  color: var(--leaf-dark);
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .info-panel {

@@ -1,7 +1,7 @@
 export const siteMeta = {
   title: "采摘园网 | 中国周末采摘园城市指南",
   description:
-    "采摘园网精选中国各省份适合周末出发的采摘城市，首页聚合城市采摘特色，详情页整理采摘园清单、地址线索、联系建议、时令水果和亲子出行提醒。",
+    "采摘园网精选中国各省份适合周末出发的采摘城市，首页聚合城市采摘特色，详情页整理采摘园卡片清单、地址线索、联系电话、时令水果和亲子出行提醒。",
   heroImage:
     "https://images.unsplash.com/photo-1726587141088-77db7fb1fe93?auto=format&fit=crop&w=1200&q=80"
 };
@@ -23,25 +23,29 @@ function makeOrchards({ province, city, crops, theme }) {
     {
       name: `${city}${primary}采摘园`,
       address: `${province}${city}近郊${primary}种植集中区，建议地图搜索“${city} ${primary}采摘园”`,
-      phone: "以地图平台展示电话为准",
+      phone: "电话待核实",
+      crop: primary,
       highlight: `主打${primary}采摘，适合想直奔主题、体验成熟季鲜果的游客。`
     },
     {
       name: `${city}亲子生态采摘园`,
       address: `${province}${city}周边生态农业园或亲子农庄片区`,
-      phone: "出发前通过园区公众号或地图电话确认",
+      phone: "电话待核实",
+      crop: `${primary}/${secondary}`,
       highlight: `更适合亲子家庭，通常会组合${primary}、${secondary}等多种时令水果体验。`
     },
     {
       name: `${city}${theme}农庄`,
       address: `${province}${city}乡村休闲农业带，适合自驾顺路安排`,
-      phone: "建议提前电话咨询采摘期和入园规则",
+      phone: "电话待核实",
+      crop: theme,
       highlight: `适合把采摘、农家餐、拍照和周边游串成半日到一日行程。`
     },
     {
       name: `${city}四季果蔬采摘园`,
       address: `${province}${city}温室大棚或现代农业示范园周边`,
-      phone: "以当天营业公告为准",
+      phone: "电话待核实",
+      crop: "四季果蔬",
       highlight: `适合非旺季出行，常见${third || secondary}、小番茄、叶菜等补充体验。`
     }
   ];
@@ -54,6 +58,7 @@ function makeDestination({
   crops,
   season,
   theme,
+  orchards,
   image = "farm"
 }) {
   const title = `${city}${theme}采摘园`;
@@ -70,7 +75,7 @@ function makeDestination({
     description: [
       `${city}的采摘资源通常分布在近郊农业园、生态农庄和乡村采摘带。首页卡片展示的是这座城市整体采摘特色，详情页则把不同类型的采摘园线索集中列出来，方便按品类和出行方式筛选。`,
       `这里推荐把${crops.slice(0, 2).join("和")}作为核心体验，也可以结合${crops[2] || "时令果蔬"}安排顺路采摘。采摘前可以先问清楚是否按斤称重、是否需要门票、是否能边摘边尝，以及园区是否提供停车、洗手间和遮阳休息区。`,
-      `采摘园的营业状态、电话和成熟度变化很快，建议把下方表格当作城市采摘线索，出发前再通过地图平台、园区公众号或电话做二次确认。`
+      `采摘园的营业状态、电话和成熟度变化很快，建议把下方卡片当作城市采摘线索，出发前再通过地图平台、园区公众号或电话做二次确认。`
     ],
     pick: crops.map((crop) => `${crop}：适合现场体验，成熟期内口感和拍照效果更好。`),
     highlights: [
@@ -85,13 +90,50 @@ function makeDestination({
       "亲子出行建议准备防晒、防蚊、湿巾和可替换衣物。",
       "如果计划购买较多水果，建议自带泡沫箱或硬质果篮，减少路上挤压。"
     ],
-    orchards: makeOrchards({ province, city, crops, theme }),
+    orchards: orchards ?? makeOrchards({ province, city, crops, theme }),
     searchKeywords: [`${city}采摘园`, `${city}${crops[0]}采摘`, `${province}亲子采摘`, `${city}周末采摘`]
   };
 }
 
 export const destinations = [
-  makeDestination({ slug: "beijing-changping", province: "北京", city: "昌平", crops: ["草莓", "樱桃", "苹果"], season: "12月至次年6月、9月至10月", theme: "草莓樱桃", image: "strawberry" }),
+  makeDestination({
+    slug: "beijing-changping",
+    province: "北京",
+    city: "昌平",
+    crops: ["草莓", "樱桃", "苹果"],
+    season: "12月至次年6月、9月至10月",
+    theme: "草莓樱桃",
+    image: "strawberry",
+    orchards: [
+      {
+        name: "西营娟子种植园",
+        address: "北京市昌平区兴寿镇西营村草莓园",
+        phone: "010-61722828",
+        crop: "草莓",
+        highlight: "昌平草莓采摘代表园区之一，适合冬春季亲子草莓采摘。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/"
+      },
+      {
+        name: "优优草莓采摘园",
+        address: "北京市昌平区兴寿镇辛庄村",
+        phone: "13683062353",
+        crop: "草莓",
+        highlight: "适合自驾前往，主打草莓采摘和近郊农事体验。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/"
+      },
+      {
+        name: "美林间草莓基地",
+        address: "北京市昌平区兴寿镇沙陀村南",
+        phone: "400-0365395",
+        crop: "草莓",
+        highlight: "主打草莓采摘，可接待团体，适合家庭和团队春季采摘。",
+        source: "北京本地宝公开采摘信息",
+        sourceUrl: "https://bj.bendibao.com/"
+      }
+    ]
+  }),
   makeDestination({ slug: "tianjin-jizhou", province: "天津", city: "蓟州", crops: ["樱桃", "桃子", "葡萄"], season: "5月至10月", theme: "山野果园", image: "cherry" }),
   makeDestination({ slug: "hebei-shijiazhuang", province: "河北", city: "石家庄", crops: ["草莓", "葡萄", "梨"], season: "12月至次年5月、7月至10月", theme: "近郊亲子", image: "grape" }),
   makeDestination({ slug: "shanxi-yuncheng", province: "山西", city: "运城", crops: ["苹果", "桃子", "葡萄"], season: "6月至10月", theme: "黄土高原果香", image: "apple" }),

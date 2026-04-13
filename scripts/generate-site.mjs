@@ -35,32 +35,52 @@ function renderParagraphs(items) {
   return items.map((item) => `<p>${escapeHtml(item)}</p>`).join("");
 }
 
-function renderOrchardTable(orchards) {
-  const rows = orchards
-    .map(
-      (orchard) => `<tr>
-              <td>${escapeHtml(orchard.name)}</td>
-              <td>${escapeHtml(orchard.address)}</td>
-              <td>${escapeHtml(orchard.phone)}</td>
-              <td>${escapeHtml(orchard.highlight)}</td>
-            </tr>`
-    )
-    .join("");
+function phoneHref(phone) {
+  const normalized = String(phone).match(/[0-9-]{7,}/)?.[0];
+  return normalized ? `tel:${normalized}` : "";
+}
 
-  return `<div class="table-wrap">
-          <table class="orchard-table">
-            <thead>
-              <tr>
-                <th>采摘园名字</th>
-                <th>地址</th>
-                <th>电话</th>
-                <th>亮点介绍</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${rows}
-            </tbody>
-          </table>
+function renderOrchardCards(orchards) {
+  return `<div class="orchard-grid">
+          ${orchards
+    .map(
+      (orchard) => {
+        const href = phoneHref(orchard.phone);
+        const phone = href
+          ? `<a class="phone-pill" href="${escapeHtml(href)}">${escapeHtml(orchard.phone)}</a>`
+          : `<span class="phone-pill muted">${escapeHtml(orchard.phone)}</span>`;
+        const source = orchard.source
+          ? `<p class="source-note">信息来源：${
+              orchard.sourceUrl
+                ? `<a href="${escapeHtml(orchard.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(orchard.source)}</a>`
+                : escapeHtml(orchard.source)
+            }</p>`
+          : "";
+
+        return `<article class="orchard-card">
+              <div class="orchard-card-head">
+                <span>${escapeHtml(orchard.crop || "采摘园")}</span>
+                <h3>${escapeHtml(orchard.name)}</h3>
+              </div>
+              <div class="orchard-meta">
+                <div>
+                  <strong>地址</strong>
+                  <p>${escapeHtml(orchard.address)}</p>
+                </div>
+                <div>
+                  <strong>电话</strong>
+                  ${phone}
+                </div>
+                <div>
+                  <strong>亮点</strong>
+                  <p>${escapeHtml(orchard.highlight)}</p>
+                </div>
+              </div>
+              ${source}
+            </article>`;
+      }
+    )
+    .join("")}
         </div>`;
 }
 
@@ -138,7 +158,7 @@ function buildIndexPage() {
       <section class="section-head">
         <p class="eyebrow">精选城市</p>
         <h2>每个省份选一个适合周末出发的采摘城市</h2>
-        <p>首页卡片聚合这座城市的采摘特色和主打水果；进入城市详情页后，可以查看多个采摘园方向的表格清单、地址线索、联系建议和出行提醒。</p>
+        <p>首页卡片聚合这座城市的采摘特色和主打水果；进入城市详情页后，可以查看多个采摘园方向的卡片清单、地址线索、联系建议和出行提醒。</p>
       </section>
       <section class="city-grid">
         ${cards}
@@ -183,8 +203,8 @@ function buildCityPage(item) {
         </section>
         <section>
           <h2>${escapeHtml(item.city)}采摘园清单</h2>
-          <p>下面按城市采摘线索整理多个园区方向，方便你比较采摘品类、位置范围和适合的玩法。电话和营业状态建议出发前以地图平台、园区公众号或官方公告为准。</p>
-          ${renderOrchardTable(item.orchards)}
+          <p>下面按城市采摘线索整理多个园区方向，方便你比较采摘品类、位置范围、联系电话和适合的玩法。电话和营业状态变化较快，出发前建议再确认一次。</p>
+          ${renderOrchardCards(item.orchards)}
         </section>
         <section>
           <h2>适合采摘什么</h2>
