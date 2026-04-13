@@ -47,6 +47,20 @@ function makeOrchards({ province, city, crops, theme }) {
       phone: "电话待核实",
       crop: "四季果蔬",
       highlight: `适合非旺季出行，常见${third || secondary}、小番茄、叶菜等补充体验。`
+    },
+    {
+      name: `${city}${secondary}采摘园`,
+      address: `${province}${city}${secondary}成熟期采摘片区，建议地图搜索“${city} ${secondary}采摘”`,
+      phone: "电话待核实",
+      crop: secondary,
+      highlight: `适合在${secondary}成熟季作为重点行程，和${primary}采摘形成错峰选择。`
+    },
+    {
+      name: `${city}乡村休闲采摘园`,
+      address: `${province}${city}乡村旅游路线沿线，可结合农家餐和周边景点安排`,
+      phone: "电话待核实",
+      crop: `${primary}/${third || secondary}`,
+      highlight: `适合不想只摘一种水果的游客，通常能组合采摘、餐饮、露营或农事体验。`
     }
   ];
 }
@@ -106,31 +120,58 @@ export const destinations = [
     image: "strawberry",
     orchards: [
       {
-        name: "西营娟子种植园",
-        address: "北京市昌平区兴寿镇西营村草莓园",
-        phone: "010-61722828",
+        name: "茂发盛草莓采摘园",
+        address: "北京市昌平区西关庄村西口",
+        phone: "010-61714368 / 15801005549",
         crop: "草莓",
-        highlight: "昌平草莓采摘代表园区之一，适合冬春季亲子草莓采摘。",
+        highlight: "主栽红颜、典雪、白草莓、圣诞红等品种，适合想体验多品种草莓的游客。",
         source: "北京旅游网公开采摘信息",
-        sourceUrl: "https://www.visitbeijing.com.cn/"
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
       },
       {
-        name: "优优草莓采摘园",
-        address: "北京市昌平区兴寿镇辛庄村",
-        phone: "13683062353",
+        name: "北京昌平硒元公社",
+        address: "北京市昌平区十三陵镇长陵园村西北角",
+        phone: "010-60760023 / 13511035266",
         crop: "草莓",
-        highlight: "适合自驾前往，主打草莓采摘和近郊农事体验。",
+        highlight: "主栽红颜、章姬，适合关注草莓口感和近郊自驾采摘的家庭。",
         source: "北京旅游网公开采摘信息",
-        sourceUrl: "https://www.visitbeijing.com.cn/"
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
       },
       {
-        name: "美林间草莓基地",
-        address: "北京市昌平区兴寿镇沙陀村南",
-        phone: "400-0365395",
+        name: "永山家庭农场",
+        address: "北京市昌平区十三陵镇德陵村",
+        phone: "15810445669",
         crop: "草莓",
-        highlight: "主打草莓采摘，可接待团体，适合家庭和团队春季采摘。",
-        source: "北京本地宝公开采摘信息",
-        sourceUrl: "https://bj.bendibao.com/"
+        highlight: "主栽红颜、圣诞红，适合预约制家庭采摘，出发前建议提前电话确认。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
+      },
+      {
+        name: "北京秀花农家乐旅游观光园",
+        address: "北京市昌平区马池口镇北小营西侧",
+        phone: "13601237077",
+        crop: "草莓",
+        highlight: "农家乐观光园类型，适合把草莓采摘和乡村餐饮安排在同一趟行程。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
+      },
+      {
+        name: "北京鼎翔绿色基地",
+        address: "北京市昌平区马池口镇横桥村北侧",
+        phone: "15330000888",
+        crop: "草莓",
+        highlight: "主栽红颜、圣诞红，适合自驾前往的绿色基地型采摘体验。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
+      },
+      {
+        name: "京郊64号农家奶油草莓",
+        address: "北京市昌平区兴寿镇桃西路桃林草莓B区64号",
+        phone: "13581882595 / 13716624342",
+        crop: "草莓",
+        highlight: "主打农家奶油草莓，适合想找兴寿镇草莓片区具体棚号的游客。",
+        source: "北京旅游网公开采摘信息",
+        sourceUrl: "https://www.visitbeijing.com.cn/article/47Ql2WVpeQT"
       }
     ]
   }),
