@@ -125,6 +125,30 @@ const verifiedOrchardsBySlug = {
     verifiedOrchard({ name: "青白江阿智农场", address: "成都市青白江区福洪镇杏花村", phone: "15208271065", crop: "樱桃", highlight: "青白江方向较早成熟的樱桃采摘点，适合电话确认后出发。", source: "成都本地宝公开采摘信息", sourceUrl: "https://m.cd.bendibao.com/tour/181887.shtm" }),
     verifiedOrchard({ name: "金彬家庭农场", address: "成都市青白江区清泉镇五桂村周边", phone: "13882103230", crop: "樱桃", highlight: "清泉镇樱桃采摘点，适合和龙泉山线乡村游结合。", source: "成都本地宝公开采摘信息", sourceUrl: "https://m.cd.bendibao.com/tour/181887.shtm" }),
     verifiedOrchard({ name: "黑珍珠采摘园", address: "成都市青白江区清泉镇五桂村周边", phone: "13618027045", crop: "樱桃", highlight: "清泉镇黑珍珠樱桃采摘点，适合春季樱桃尝鲜。", source: "成都本地宝公开采摘信息", sourceUrl: "https://m.cd.bendibao.com/tour/181887.shtm" })
+  ],
+  "shandong-yantai": [
+    verifiedOrchard({ name: "潘家泊樱桃采摘园", address: "烟台市福山区东厅街道潘家泊村", phone: "13356906175", crop: "樱桃", highlight: "福山区樱桃采摘点，适合5月底到6月上旬樱桃成熟期前往。", source: "烟台本地宝公开采摘信息", sourceUrl: "https://m.yt.bendibao.com/xiuxian/71085.shtm" }),
+    verifiedOrchard({ name: "晓钟家庭农场", address: "烟台市福山区东厅街道桃园村", phone: "13853524466", crop: "樱桃", highlight: "家庭农场型采摘点，适合电话确认成熟度后自驾出发。", source: "烟台本地宝公开采摘信息", sourceUrl: "https://m.yt.bendibao.com/xiuxian/71085.shtm" }),
+    verifiedOrchard({ name: "魅力南庄田园综合体", address: "烟台市福山区门楼街道南庄村", phone: "15953510159", crop: "樱桃", highlight: "田园综合体型目的地，适合采摘和亲子休闲结合。", source: "烟台本地宝公开采摘信息", sourceUrl: "https://m.yt.bendibao.com/xiuxian/71085.shtm" }),
+    verifiedOrchard({ name: "真有采摘园", address: "烟台市福山区门楼街道姜家夼真有采摘园", phone: "13626452509", crop: "樱桃", highlight: "门楼街道樱桃采摘园，适合福山近郊短途采摘。", source: "烟台本地宝公开采摘信息", sourceUrl: "https://m.yt.bendibao.com/xiuxian/71085.shtm" }),
+    verifiedOrchard({ name: "乡味大樱桃采摘园", address: "烟台市福山区高疃镇渡口村渡口桥东50米北侧", phone: "15266572288", crop: "樱桃", highlight: "高疃镇大樱桃采摘点，适合樱桃季安排半日游。", source: "烟台本地宝公开采摘信息", sourceUrl: "https://m.yt.bendibao.com/xiuxian/71085.shtm" }),
+    verifiedOrchard({ name: "蓝湾生态采摘基地", address: "烟台市福山区张格庄镇楼子口村北", phone: "15762701777", crop: "草莓/樱桃", highlight: "采摘环境好，可体验草莓采摘，也可关注后续樱桃成熟季。", source: "烟台文旅公开采摘信息", sourceUrl: "https://www.yantai.gov.cn/art/2023/6/1/art_43277_3120547.html" })
+  ],
+  "guangdong-guangzhou": [
+    verifiedOrchard({ name: "东林果业园", address: "广州市增城区荔城街太平村东厂村前路", phone: "13318878818 / 13580545109", crop: "荔枝/龙眼", highlight: "增城荔枝龙眼果园，适合夏季荔枝成熟期采摘。", source: "东林果业园官方公开信息", sourceUrl: "https://m.donglin360.com/" }),
+    verifiedOrchard({ name: "蓝谷蓝莓园", address: "广州市从化区太平镇银林刘宅街", phone: "13332851007", crop: "蓝莓", highlight: "从化太平镇蓝莓采摘点，适合春末初夏错峰出游。", source: "广州本地宝公开采摘信息", sourceUrl: "https://m.gz.bendibao.com/tour/359305.html" }),
+    verifiedOrchard({ name: "周晃百果园", address: "广州市白云区太和镇头陂村飞鹅坑", phone: "13925039683", crop: "荔枝", highlight: "白云区近郊果园，适合夏季荔枝采摘。", source: "广州本地宝公开采摘信息", sourceUrl: "https://m.gz.bendibao.com/tour/364342.html" }),
+    verifiedOrchard({ name: "果度农场", address: "广州市白云区钟落潭镇龙岗村大石桥8号", phone: "17868048420", crop: "龙眼/黄皮/番石榴", highlight: "一个农场覆盖多种水果，适合按季节选择不同采摘主题。", source: "广州本地宝公开采摘信息", sourceUrl: "https://m.gz.bendibao.com/tour/364342.html" }),
+    verifiedOrchard({ name: "丰益生态园", address: "广州市白云区人和镇建南村", phone: "13022082814", crop: "无花果/葡萄", highlight: "人和镇生态园，可根据季节采摘葡萄或无花果。", source: "广州本地宝公开采摘信息", sourceUrl: "https://m.gz.bendibao.com/tour/364342.html" }),
+    verifiedOrchard({ name: "流溪湾绿康葡萄采摘园", address: "广州市白云区人和镇流溪湾周边", phone: "13828427194", crop: "葡萄", highlight: "葡萄成熟季更适合前往，适合周末近郊半日采摘。", source: "广州本地宝公开采摘信息", sourceUrl: "https://m.gz.bendibao.com/tour/364342.html" })
+  ],
+  "shaanxi-xian": [
+    verifiedOrchard({ name: "白鹿仓现代农业草莓采摘基地", address: "西安市灞桥区狄寨北路张洪寨转盘东北角", phone: "15809295796", crop: "草莓", highlight: "白鹿原上规模较大的草莓采摘基地，适合家庭周末采摘。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" }),
+    verifiedOrchard({ name: "丰禾源草莓樱桃采摘园", address: "西安市灞桥区孝王路麦草人有机农业公园", phone: "18991129601", crop: "草莓/樱桃", highlight: "可关注草莓和樱桃两个成熟季，适合近郊错峰出行。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" }),
+    verifiedOrchard({ name: "妮子奶油草莓园", address: "西安市长安区雁引路南段西堡子新村", phone: "13679207158", crop: "草莓", highlight: "主打奶油草莓，适合亲子采摘和回头客预约。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" }),
+    verifiedOrchard({ name: "张冬草莓采摘园", address: "西安市长安区北留村833村道与113县道交叉口南行350米路西", phone: "13759992179", crop: "草莓", highlight: "长安区草莓采摘点，适合电话确认后导航直达。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" }),
+    verifiedOrchard({ name: "轩轩草莓园", address: "西安市未央区石化大道东风村加油站向南500米", phone: "17355720531", crop: "草莓", highlight: "棚内打理整洁，适合带孩子体验近郊草莓采摘。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" }),
+    verifiedOrchard({ name: "草莓星球草莓采摘亲子乐园", address: "西安市未央区天章大道与尚稷路交汇处南450米路东", phone: "13227006590", crop: "草莓", highlight: "偏亲子乐园型采摘点，适合家庭周末出游。", source: "西安本地宝公开采摘信息", sourceUrl: "https://xa.bendibao.com/xiuxian/2023210/111223.shtm" })
   ]
 };
 
