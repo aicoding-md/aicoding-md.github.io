@@ -1,9 +1,9 @@
 export const siteMeta = {
   title: "采摘园网 | 中国周末采摘园城市指南",
   description:
-    "采摘园网精选中国各省份适合周末出发的采摘城市，首页聚合城市采摘特色，详情页整理采摘园卡片清单、地址线索、联系电话、时令水果和亲子出行提醒。",
+    "采摘园网精选中国内地各省份及香港适合周末出发的采摘城市，首页聚合城市采摘特色，详情页整理采摘园卡片清单、地址线索、联系电话、时令水果和亲子出行提醒。",
   heroImage:
-    "https://images.unsplash.com/photo-1726587141088-77db7fb1fe93?auto=format&fit=crop&w=1200&q=80"
+    "https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1e2?auto=format&fit=crop&w=1200&q=80"
 };
 
 const imageMap = {
@@ -339,5 +339,6 @@ export const destinations = [
   makeDestination({ slug: "gansu-lanzhou", province: "甘肃", city: "兰州", crops: ["草莓", "白兰瓜", "葡萄"], season: "12月至次年5月、7月至9月", theme: "黄河岸边", image: "grape" }),
   makeDestination({ slug: "qinghai-xining", province: "青海", city: "西宁", crops: ["草莓", "樱桃", "温室葡萄"], season: "3月至9月", theme: "高原日光", image: "strawberry" }),
   makeDestination({ slug: "ningxia-yinchuan", province: "宁夏", city: "银川", crops: ["葡萄", "枸杞", "苹果"], season: "6月至10月", theme: "贺兰山下", image: "grape" }),
-  makeDestination({ slug: "xinjiang-turpan", province: "新疆", city: "吐鲁番", crops: ["葡萄", "哈密瓜", "桑葚"], season: "6月至9月", theme: "西域瓜果", image: "grape" })
+  makeDestination({ slug: "xinjiang-turpan", province: "新疆", city: "吐鲁番", crops: ["葡萄", "哈密瓜", "桑葚"], season: "6月至9月", theme: "西域瓜果", image: "grape" }),
+  makeDestination({ slug: "hong-kong-yuen-long", province: "香港", city: "元朗", crops: ["草莓", "番石榴", "葡萄"], season: "12月至次年4月、7月至10月", theme: "新界田园", image: "strawberry" })
 ];

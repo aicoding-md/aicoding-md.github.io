@@ -149,7 +149,7 @@ function buildIndexPage() {
           </div>
         </div>
         <div class="hero-photo">
-          <img src="${escapeHtml(siteMeta.heroImage)}" alt="一家人在果园里采摘水果" />
+          <img src="${escapeHtml(siteMeta.heroImage)}" alt="中国风女生在采摘园里采摘水果" />
         </div>
       </section>
     </header>
