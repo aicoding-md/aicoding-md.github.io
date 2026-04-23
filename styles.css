@@ -31,7 +31,7 @@ a {
 
 .hero,
 .article-hero {
-  padding: 28px min(5vw, 56px) 56px;
+  padding: 28px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(231, 239, 255, 0.92)),
     linear-gradient(180deg, #eef4ff, #f7f9fd);
@@ -44,7 +44,7 @@ a {
   align-items: center;
   gap: 16px;
   max-width: 1160px;
-  margin: 0 auto 36px;
+  margin: 0 auto;
 }
 
 .brand {
@@ -125,6 +125,7 @@ h1 {
 
 .hero-board {
   overflow: hidden;
+  margin-top: 36px;
   width: 100%;
   border: 1px solid rgba(14, 34, 63, 0.12);
   border-radius: 34px;
