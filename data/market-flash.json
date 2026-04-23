@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "market": "美股",
+      "level": "hot",
+      "time": "07:18",
+      "title": "纳指期货小幅走高，芯片链盘前继续活跃",
+      "summary": "市场继续围绕 AI 服务器、HBM 和数据中心电力链交易，盘前情绪偏暖。",
+      "url": "https://caishangtong.com/articles/2026-04-23-market-wrap.html"
+    },
+    {
+      "market": "A股",
+      "level": "normal",
+      "time": "07:05",
+      "title": "券商晨会继续聚焦算力硬件和光通信",
+      "summary": "多家机构把光模块、PCB、高速连接与电力设备列为当日重点观察方向。"
+    },
+    {
+      "market": "港股",
+      "level": "hot",
+      "time": "06:52",
+      "title": "恒科夜期偏弱，硬件设备和芯片股相对抗跌",
+      "summary": "平台互联网仍承压，但光通信、次新芯片和设备链资金承接尚可。"
+    },
+    {
+      "market": "宏观",
+      "level": "normal",
+      "time": "06:40",
+      "title": "油价波动抬升，市场继续关注地缘局势变化",
+      "summary": "若能源价格继续走高，将直接影响美股高位风险偏好与全球成长资产估值。"
+    },
+    {
+      "market": "AI科技",
+      "level": "hot",
+      "time": "06:28",
+      "title": "Google、OpenAI、Anthropic 相关基础设施主题持续发酵",
+      "summary": "推理芯片、云算力绑定、电力设备和内存链条成为 AI 第二阶段投资重点。"
+    },
+    {
+      "market": "公司",
+      "level": "normal",
+      "time": "06:16",
+      "title": "GE Vernova 电力设备订单逻辑继续带动全球公用设备估值",
+      "summary": "数据中心建设扩张让电力链成为 AI 主线外溢的关键受益方向。"
+    }
+  ]
+}

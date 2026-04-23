@@ -102,6 +102,26 @@
     </header>
 
     <main class="page">
+      <section class="flash-strip">
+        <div class="section-head section-head-inline">
+          <div>
+            <p class="eyebrow">7x24 快讯</p>
+            <h2>金融市场实时快讯</h2>
+          </div>
+          <a class="readmore" href="./flash.html">进入 7x24 快讯页</a>
+        </div>
+        <div
+          class="flash-panel"
+          data-flash-widget
+          data-limit="4"
+          data-endpoint=""
+          data-fallback="./data/market-flash.json"
+          data-refresh-ms="60000"
+        >
+          <div class="flash-loading">正在加载最新快讯...</div>
+        </div>
+      </section>
+
       <section class="section-head">
         <p class="eyebrow">文章列表</p>
         <h2>按天归档的市场复盘</h2>
@@ -115,7 +135,7 @@
             <span>首篇文章</span>
           </div>
           <h3>
-            <a href="/articles/2026-04-23-market-wrap.html">4月23日市场与科技复盘：美股再创新高，A股重返4100，港股分化承压</a>
+            <a href="./articles/2026-04-23-market-wrap.html">4月23日市场与科技复盘：美股再创新高，A股重返4100，港股分化承压</a>
           </h3>
           <p>
             复盘 2026 年 4 月 22 日的三地市场：美股在业绩与 AI 基建带动下继续创高，A 股算力硬件链再度爆发，港股科网回调但光通信逆势走强；同时梳理 Google TPU 8t/8i、OpenAI ImageGen 2.0、Anthropic 与 AWS 扩大合作、GE Vernova 受益 AI 电力需求等关键科技信号。
@@ -128,7 +148,7 @@
             <span>前天复盘</span>
           </div>
           <h3>
-            <a href="/articles/2026-04-22-market-wrap.html">4月22日市场与科技复盘：美股高位震荡，A股缩量回升，港股硬件独强</a>
+            <a href="./articles/2026-04-22-market-wrap.html">4月22日市场与科技复盘：美股高位震荡，A股缩量回升，港股硬件独强</a>
           </h3>
           <p>
             复盘 2026 年 4 月 21 日的三地市场：美股受中东局势和油价扰动小幅回撤，A 股缩量翻红但结构分化，港股指数温和上扬而硬件设备和次新芯片最强；同时梳理 OpenAI ImageGen 2.0、Anthropic 扩大 AWS 算力合作、Google Cloud Next 预热和 AI 电力链升温等信号。
@@ -142,5 +162,6 @@
       <p>盘前速览</p>
       <p>内容仅供信息参考，不构成任何投资建议。</p>
     </footer>
+    <script src="/market-flash.js"></script>
   </body>
 </html>
