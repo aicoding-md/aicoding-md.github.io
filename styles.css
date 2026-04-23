@@ -49,8 +49,6 @@ a {
 
 .brand {
   color: var(--navy);
-  font-size: 1.2rem;
-  font-weight: 900;
   text-decoration: none;
 }
 
@@ -326,9 +324,8 @@ h1 {
   margin: 0 auto;
 }
 
-.article-titlebar h1 {
+.article-titlebar h2 {
   margin-bottom: 0;
-  font-size: clamp(2rem, 4vw, 3.8rem);
   line-height: 1.08;
 }
 
