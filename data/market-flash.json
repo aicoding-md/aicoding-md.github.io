@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:28",
-      "title": "标普与纳指续创新高，美股进入财报验证窗口",
-      "summary": "4 月 27 日美股高位钝化上行，油价走强但没有打断 AI 主线风险偏好。",
-      "url": "https://caishangtong.com/articles/2026-04-28-market-wrap.html"
+      "time": "07:31",
+      "title": "纳指回落近 1%，美股科技股结束连续冲高",
+      "summary": "4 月 28 日 AI 与半导体股集体回调，能源板块则因油价走高而逆势抗跌。",
+      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
     },
     {
       "market": "A股",
       "level": "hot",
-      "time": "07:16",
-      "title": "半导体、PCB 与科创成长重新接管盘面",
-      "summary": "沪深两市超 3200 股上涨，资金明显从防御风格切回 AI 硬件与自主可控。 ",
-      "url": "https://caishangtong.com/articles/2026-04-28-market-wrap.html"
+      "time": "07:18",
+      "title": "A股缩量调整，医药、煤炭、燃气成少数亮点",
+      "summary": "4 月 28 日全市场超 3600 股下跌，资金集中转向防御和低位补涨分支。",
+      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:02",
-      "title": "恒指偏弱恒科偏强，港股芯片与光通信继续领涨",
-      "summary": "中芯国际、华虹半导体、长飞光纤光缆走强，权重平台股则继续拖累恒指。",
-      "url": "https://caishangtong.com/articles/2026-04-28-market-wrap.html"
+      "time": "07:06",
+      "title": "恒生科技跌超 2%，港股医药与能源逆势走强",
+      "summary": "权重科技股、AI 应用股和锂电龙头集体回撤，药明康德与煤炭股成为少数强方向。",
+      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "06:48",
-      "title": "OpenAI 与 Microsoft 重写合作协议，AI 云格局再平衡",
-      "summary": "新协议确认 Azure 仍为主要云伙伴，但 OpenAI 可以跨云部署，授权也转为非独占。",
-      "url": "https://caishangtong.com/articles/2026-04-28-market-wrap.html"
+      "time": "06:52",
+      "title": "OpenAI 已可通过 AWS 获取，AI 多云格局继续强化",
+      "summary": "OpenAI 在重写与 Microsoft 的合作后，开始把 models、Codex 和 Managed Agents 真正铺向 AWS。",
+      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:35",
-      "title": "霍尔木兹海峡运输扰动推升油价，风险资产暂未失速",
-      "summary": "能源价格重新抬头后，市场开始更关注本周财报与地缘变量对高位估值的影响。"
+      "time": "06:39",
+      "title": "油价继续抬升，节前防守情绪在三地市场同步升温",
+      "summary": "地缘变量与节前观望共振，推动资源、防御和现金流资产获得更多资金关注。"
     }
   ]
 }
