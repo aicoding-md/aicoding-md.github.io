@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:31",
-      "title": "纳指回落近 1%，美股科技股结束连续冲高",
-      "summary": "4 月 28 日 AI 与半导体股集体回调，能源板块则因油价走高而逆势抗跌。",
-      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
+      "time": "07:32",
+      "title": "美股高位震荡，微软与亚马逊盘后财报提振 AI 情绪",
+      "summary": "4 月 29 日白天指数分化，但盘后云和 AI 业绩继续给纳指主线提供支撑。",
+      "url": "https://caishangtong.com/articles/2026-04-30-market-wrap.html"
     },
     {
       "market": "A股",
       "level": "hot",
-      "time": "07:18",
-      "title": "A股缩量调整，医药、煤炭、燃气成少数亮点",
-      "summary": "4 月 28 日全市场超 3600 股下跌，资金集中转向防御和低位补涨分支。",
-      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
+      "time": "07:20",
+      "title": "创业板大涨 2.52%，A股放量普涨重回进攻模式",
+      "summary": "锂电、能源金属、AI 应用和机器人链同步回暖，近 4000 股上涨。",
+      "url": "https://caishangtong.com/articles/2026-04-30-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:06",
-      "title": "恒生科技跌超 2%，港股医药与能源逆势走强",
-      "summary": "权重科技股、AI 应用股和锂电龙头集体回撤，药明康德与煤炭股成为少数强方向。",
-      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
+      "time": "07:08",
+      "title": "恒指重回 26000 上方，港股锂电与科网联手修复",
+      "summary": "恒指涨 1.68%，恒生科技涨 1.72%，锂电、平台科技和次新成长成为领涨方向。",
+      "url": "https://caishangtong.com/articles/2026-04-30-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "06:52",
-      "title": "OpenAI 已可通过 AWS 获取，AI 多云格局继续强化",
-      "summary": "OpenAI 在重写与 Microsoft 的合作后，开始把 models、Codex 和 Managed Agents 真正铺向 AWS。",
-      "url": "https://caishangtong.com/articles/2026-04-29-market-wrap.html"
+      "time": "06:55",
+      "title": "微软财报确认云与 AI 高增长，OpenAI on AWS 继续扩容",
+      "summary": "Microsoft Cloud 和 AWS 同时给出高景气数据，AI 基建竞争仍在加速。",
+      "url": "https://caishangtong.com/articles/2026-04-30-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:39",
-      "title": "油价继续抬升，节前防守情绪在三地市场同步升温",
-      "summary": "地缘变量与节前观望共振，推动资源、防御和现金流资产获得更多资金关注。"
+      "time": "06:41",
+      "title": "油价与降息预期继续拉扯，美股白天仍偏高位震荡",
+      "summary": "宏观端没有完全放松，但亚洲市场率先走出一轮风险偏好修复。"
     }
   ]
 }
