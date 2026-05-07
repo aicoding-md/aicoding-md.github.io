@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:36",
-      "title": "标普与纳指再创纪录高位，大型科技继续主导情绪",
-      "summary": "5 月 5 日美股显著走强，油价回落与企业盈利超预期共同支撑了 AI 平台和科技龙头。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:34",
+      "title": "标普与纳指再创纪录新高，AI 与芯片股带动美股大涨",
+      "summary": "5 月 6 日油价回落、AMD 等科技股走强，推动纳指大涨 2.0%。",
+      "url": "https://caishangtong.com/articles/2026-05-07-market-wrap.html"
     },
     {
       "market": "A股",
-      "level": "normal",
-      "time": "07:22",
-      "title": "A股 5 月 5 日继续休市，节后首日观察新能源与科技承接",
-      "summary": "根据 2026 年劳动节休市安排，A 股于 5 月 6 日恢复交易，节后风格切换值得重点跟踪。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "level": "hot",
+      "time": "07:21",
+      "title": "A股节后开门红，创业板与科创成长全面爆发",
+      "summary": "5 月 6 日深成指涨 2.33%，创业板指涨 2.75%，存储芯片与算力链成为最强主线。",
+      "url": "https://caishangtong.com/articles/2026-05-07-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:09",
-      "title": "港股指数回调，但半导体与高弹性题材仍有局部热度",
-      "summary": "恒指与恒生科技双双回落，平台权重偏弱，不过局部成长股并未完全失去资金关注。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:11",
+      "title": "恒指涨超 1%，港股芯片与科技权重继续领跑",
+      "summary": "5 月 6 日中芯国际、华虹半导体、百度、联想等带动恒指和恒生科技同步走高。",
+      "url": "https://caishangtong.com/articles/2026-05-07-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "06:58",
-      "title": "GPT-5.5 Instant 持续向企业入口铺开，多云分发继续强化",
-      "summary": "OpenAI 的重点已不只是模型能力，还在于让模型以更低延迟、更高可用性进入更多企业工作流。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "06:56",
+      "title": "OpenAI 多云分发持续强化，Bedrock 企业代理叙事继续升温",
+      "summary": "模型、Codex 和代理系统正更快落入 AWS 等企业基础设施，资金继续强化云与算力映射。",
+      "url": "https://caishangtong.com/articles/2026-05-07-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:44",
-      "title": "油价从高位明显回落，短线缓解成长股估值压力",
-      "summary": "宏观扰动没有消失，但 5 月 5 日原油下跌让外盘风险偏好得到了一次明显修复。"
+      "time": "06:43",
+      "title": "油价回落与地缘预期缓和，共同推动全球风险偏好修复",
+      "summary": "5 月 6 日成长股和科技股的全面走强，本质上是宏观压力暂时缓解后的估值修复。"
     }
   ]
 }
