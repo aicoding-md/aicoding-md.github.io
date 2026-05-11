@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:34",
-      "title": "标普与纳指再创纪录新高，AI 与芯片股带动美股大涨",
-      "summary": "5 月 6 日油价回落、AMD 等科技股走强，推动纳指大涨 2.0%。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:48",
+      "title": "标普与纳指周线强收纪录新高，美股平台科技继续领涨",
+      "summary": "5 月 8 日就业和盈利双重支撑下，纳指再涨 1.7%，平台科技仍是最强资产。",
+      "url": "https://caishangtong.com/articles/2026-05-08-market-wrap.html"
     },
     {
       "market": "A股",
       "level": "hot",
-      "time": "07:21",
-      "title": "A股节后开门红，创业板与科创成长全面爆发",
-      "summary": "5 月 6 日深成指涨 2.33%，创业板指涨 2.75%，存储芯片与算力链成为最强主线。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:34",
+      "title": "A股高位分化但题材不弱，机器人、航天和 CPO 接力活跃",
+      "summary": "5 月 8 日指数震荡整理，但超 3600 股上涨，成长内部轮动依然很强。",
+      "url": "https://caishangtong.com/articles/2026-05-08-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:11",
-      "title": "恒指涨超 1%，港股芯片与科技权重继续领跑",
-      "summary": "5 月 6 日中芯国际、华虹半导体、百度、联想等带动恒指和恒生科技同步走高。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:20",
+      "title": "港股强势调整，快手、百度与内房股逆势走强",
+      "summary": "5 月 8 日恒生科技仅小跌 0.36%，半导体回吐但软件、平台和地产链仍有热度。",
+      "url": "https://caishangtong.com/articles/2026-05-08-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "06:56",
-      "title": "OpenAI 多云分发持续强化，Bedrock 企业代理叙事继续升温",
-      "summary": "模型、Codex 和代理系统正更快落入 AWS 等企业基础设施，资金继续强化云与算力映射。",
-      "url": "https://caishangtong.com/articles/2026-05-06-market-wrap.html"
+      "time": "07:02",
+      "title": "ChatGPT Trusted Contact 上线，AI 平台竞争继续向安全与场景延伸",
+      "summary": "OpenAI 正把竞争点从模型本身扩展到安全、记忆和企业工作流接入层。",
+      "url": "https://caishangtong.com/articles/2026-05-08-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:43",
-      "title": "油价回落与地缘预期缓和，共同推动全球风险偏好修复",
-      "summary": "5 月 6 日成长股和科技股的全面走强，本质上是宏观压力暂时缓解后的估值修复。"
+      "time": "06:50",
+      "title": "宏观压力未消失，但成长主线暂时仍压过油价与利率扰动",
+      "summary": "5 月 7 日到 5 月 8 日，全球市场整体表现说明资金仍优先交易 AI 与盈利兑现。"
     }
   ]
 }
