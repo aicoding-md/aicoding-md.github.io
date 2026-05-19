@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:47",
-      "title": "美股主线稳住，平台科技和算力链继续维持高位承接",
-      "summary": "5 月 15 日美股更像强势整理而非转弱，核心成长资产仍是最稳的仓位选择。",
-      "url": "https://caishangtong.com/articles/2026-05-18-market-wrap.html"
+      "time": "07:45",
+      "title": "美股科技降温，平台科技和半导体进入高位整理验证期",
+      "summary": "5 月 18 日追高节奏明显放慢，市场开始更重视龙头在调整中的承接质量。",
+      "url": "https://caishangtong.com/articles/2026-05-19-market-wrap.html"
     },
     {
       "market": "A股",
       "level": "hot",
-      "time": "07:33",
-      "title": "A股高位换手加剧，算力、CPO 和存储中军仍是博弈中心",
-      "summary": "5 月 15 日活跃资金没有离场，只是从普涨切到更强调辨识度和承接的结构博弈。",
-      "url": "https://caishangtong.com/articles/2026-05-18-market-wrap.html"
+      "time": "07:31",
+      "title": "A股缩量偏弱，但算力、光通信和存储主线并未真正切掉",
+      "summary": "5 月 18 日市场进攻效率下降，不过活跃资金仍在主线核心资产里反复博弈。",
+      "url": "https://caishangtong.com/articles/2026-05-19-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:20",
-      "title": "港股科网承接仍在，芯片分化继续充当科技情绪温度计",
-      "summary": "5 月 15 日平台权重稳住指数，芯片高波动但未见系统性退潮。",
-      "url": "https://caishangtong.com/articles/2026-05-18-market-wrap.html"
+      "time": "07:17",
+      "title": "港股科网承压，芯片高位分化加剧拖累成长情绪",
+      "summary": "5 月 18 日恒生科技从强修复切向承压整理，平台权重承接成为关键。",
+      "url": "https://caishangtong.com/articles/2026-05-19-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "07:06",
-      "title": "AI 主线继续从模型能力外溢到企业分发、代理和工作流接入",
-      "summary": "科技资产定价越来越看谁能把模型能力稳定传导到长期商业化场景。",
-      "url": "https://caishangtong.com/articles/2026-05-18-market-wrap.html"
+      "time": "07:03",
+      "title": "Anthropic、AMD、Google 与 OpenAI 的最新动作继续把 AI 竞争推向分发和终端",
+      "summary": "市场越来越关注谁能把模型能力传导到企业接入、终端场景和长期商业化落地。",
+      "url": "https://caishangtong.com/articles/2026-05-19-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:52",
-      "title": "跨市场资金仍在科技成长主线里做高位博弈，防御资产暂未接棒",
-      "summary": "5 月 15 日的结构说明，市场节奏放慢了，但仓位核心并没有从科技资产移开。"
+      "time": "06:49",
+      "title": "跨市场主线节奏放慢，但防御方向仍不足以完全接管市场叙事",
+      "summary": "5 月 18 日说明资金在收缩风险偏好，却还没有真正放弃科技成长主线。"
     }
   ]
 }
