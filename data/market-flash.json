@@ -4,6 +4,45 @@
       "market": "美股",
       "level": "hot",
       "time": "07:46",
+      "title": "美股高位震荡，指数稳住但 AI 龙头进入更挑剔的定价阶段",
+      "summary": "5 月 21 日标普和纳指收回早盘跌幅，但英伟达财报后未带来新一轮全面追价。",
+      "url": "https://caishangtong.com/articles/2026-05-22-market-wrap.html"
+    },
+    {
+      "market": "A股",
+      "level": "hot",
+      "time": "07:35",
+      "title": "A股放量回撤，AI 硬件、CPO 与存储半导体出现集中兑现",
+      "summary": "5 月 21 日沪指跌破 4100 点，热门科技赛道高位分歧快速释放。",
+      "url": "https://caishangtong.com/articles/2026-05-22-market-wrap.html"
+    },
+    {
+      "market": "港股",
+      "level": "hot",
+      "time": "07:23",
+      "title": "港股科技回落，恒生科技指数跌幅明显大于恒指",
+      "summary": "5 月 21 日平台科网与芯片同步走弱，港股成长风格进入压力测试。",
+      "url": "https://caishangtong.com/articles/2026-05-22-market-wrap.html"
+    },
+    {
+      "market": "AI科技",
+      "level": "hot",
+      "time": "07:10",
+      "title": "Google I/O 2026、Anthropic-KPMG 联盟与 Maia 芯片传闻继续推高 AI 入口与算力竞争",
+      "summary": "市场开始更关注谁能把模型能力转成搜索入口、企业部署和自研芯片生态优势。",
+      "url": "https://caishangtong.com/articles/2026-05-22-market-wrap.html"
+    },
+    {
+      "market": "宏观",
+      "level": "normal",
+      "time": "06:56",
+      "title": "油价冲高回落缓和了全球风险资产压力，但高位科技股波动开始放大",
+      "summary": "5 月 21 日更像全球科技交易进入估值消化和结构分化的新阶段。"
+    },
+    {
+      "market": "美股",
+      "level": "hot",
+      "time": "07:46",
       "title": "美股受压回落，平台科技和半导体进入更重兑现的整理阶段",
       "summary": "5 月 19 日高位科技龙头继续承压，市场开始更强调估值消化和催化验证。",
       "url": "https://caishangtong.com/articles/2026-05-20-market-wrap.html"
