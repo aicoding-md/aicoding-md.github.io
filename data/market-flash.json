@@ -3,41 +3,41 @@
     {
       "market": "美股",
       "level": "hot",
-      "time": "07:49",
-      "title": "美股震荡企稳，平台科技和半导体重新稳住主线预期",
-      "summary": "5 月 22 日科技龙头没有继续失速，市场重新回到等待新催化的中继节奏。",
-      "url": "https://caishangtong.com/articles/2026-05-25-market-wrap.html"
+      "time": "07:50",
+      "title": "美股延续强势，平台科技和 AI 基建仍是全球定价锚",
+      "summary": "6 月 1 日美股继续由芯片、云基础设施和平台科技支撑风险偏好。",
+      "url": "https://caishangtong.com/articles/2026-06-02-market-wrap.html"
     },
     {
       "market": "A股",
       "level": "hot",
-      "time": "07:37",
-      "title": "A股算力回流，光通信与核心中军重新收敛市场共识",
-      "summary": "5 月 22 日资金从分化轮动切回主线核心资产，进攻方向重新更聚焦。",
-      "url": "https://caishangtong.com/articles/2026-05-25-market-wrap.html"
+      "time": "07:36",
+      "title": "A股开月分化，但核心算力、光通信和存储仍有承接",
+      "summary": "6 月 1 日市场从普涨切到精选，中军承接比边缘题材更值得盯。",
+      "url": "https://caishangtong.com/articles/2026-06-02-market-wrap.html"
     },
     {
       "market": "港股",
       "level": "hot",
-      "time": "07:24",
-      "title": "港股成长延续修复，平台科技、软件和芯片继续联动",
-      "summary": "5 月 22 日修复不再依赖单一板块，风险偏好扩散到更完整的成长链条。",
-      "url": "https://caishangtong.com/articles/2026-05-25-market-wrap.html"
+      "time": "07:22",
+      "title": "港股科技继续活跃，平台、软件和芯片保持联动",
+      "summary": "6 月 1 日恒生科技仍是风险偏好改善时的高弹性表达。",
+      "url": "https://caishangtong.com/articles/2026-06-02-market-wrap.html"
     },
     {
       "market": "AI科技",
       "level": "hot",
-      "time": "07:10",
-      "title": "AI 定价继续向终端入口、企业流程和长期工作流承接能力迁移",
-      "summary": "市场越来越愿意为“能把模型能力转成高频使用和组织部署”的公司给溢价。",
-      "url": "https://caishangtong.com/articles/2026-05-25-market-wrap.html"
+      "time": "07:08",
+      "title": "AI 搜索、Agent、终端入口和企业工作流继续成为 6 月定价核心",
+      "summary": "市场开始从估值抬升切向产品落地、使用频次和组织部署深度验证。",
+      "url": "https://caishangtong.com/articles/2026-06-02-market-wrap.html"
     },
     {
       "market": "宏观",
       "level": "normal",
-      "time": "06:58",
-      "title": "跨市场并未切换主线，资金仍在科技成长内部做再平衡",
-      "summary": "5 月 22 日的结构说明，防御资产没有接管叙事，科技仍是最强共识方向。"
+      "time": "06:55",
+      "title": "跨市场仍围绕科技成长做再平衡，防御资产没有接管叙事",
+      "summary": "6 月首个交易日说明，AI 主线还在，但资金开始更挑剔地选择兑现方向。"
     }
   ]
 }
